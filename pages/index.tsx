@@ -28,6 +28,11 @@ export default function Home() {
         <First>
           <p>this is how font family added</p>
         </First>
+        <First>
+          <p className="textp3xl underline font-bold ">
+            this is how font family added
+          </p>
+        </First>
       </main>
     </>
   );
