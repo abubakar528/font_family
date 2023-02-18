@@ -7,7 +7,10 @@ import styled from "styled-components";
 const inter = Inter({ subsets: ["latin"] });
 
 const First = styled.div`
-  border: 1px solid red;
+  height: 40px;
+  width: 450px;
+`;
+const Second = styled.div`
   height: 40px;
   width: 450px;
 `;
