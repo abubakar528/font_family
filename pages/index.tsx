@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import React from "react";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import styled from "styled-components";
@@ -7,12 +8,31 @@ import styled from "styled-components";
 const inter = Inter({ subsets: ["latin"] });
 
 const First = styled.div`
-  height: 40px;
+  height: 400px;
   width: 450px;
 `;
 const Second = styled.div`
   height: 40px;
   width: 450px;
+`;
+const Container = styled.div`
+  border: 1px solid red;
+  height: 400px;
+  width: 100%;
+  display: flex;
+`;
+const Left = styled.div`
+  border: 1px solid red;
+  height: 400px;
+  background: linear-gradient(136deg, #1b2053 0%, #41499a 100%);
+
+  width: 50%;
+`;
+const Right = styled.div`
+  border: 1px solid red;
+  background: red;
+  width: 50%;
+  height: 400px;
 `;
 
 export default function Home() {
@@ -26,13 +46,73 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <First>
-          <p>this is how font family added</p>
-        </First>
-        <First>
-          <p className="textp3xl underline font-bold ">
+          <p
+            data-aos="fade-right"
+            data-offset="10"
+            data-aos-duration="10000"
+            data-aos-delay="100"
+          >
             this is how font family added
           </p>
         </First>
+        <First>
+          <p
+            className="font-bold underline textp3xl "
+            data-aos="fade-left"
+            data-offset="120"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            this is how font family addeds
+          </p>
+        </First>
+        <First>
+          <p
+            className="font-bold underline textp3xl "
+            data-aos="fade-right"
+            data-offset="120"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            this is how font family added
+          </p>
+        </First>
+        <First>
+          <p
+            className="font-bold underline textp3xl "
+            data-aos="fade-left"
+            data-offset="120"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            this is how font family added
+          </p>
+        </First>
+        <First>
+          <p
+            className="font-bold underline textp3xl "
+            data-aos="fade-right"
+            data-offset="120"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            this is how font family added
+          </p>
+        </First>
+        <First>
+          <p
+            className="font-bold underline textp3xl "
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            this is how font family added
+          </p>
+        </First>
+        <Container>
+          <Left data-aos="flip-left">this is left side</Left>
+          <Right data-aos="flip-right">this is Right side</Right>
+        </Container>
       </main>
     </>
   );
