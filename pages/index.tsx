@@ -8,7 +8,7 @@ import styled from "styled-components";
 const inter = Inter({ subsets: ["latin"] });
 
 const First = styled.div`
-  height: 400px;
+  height: 40px;
   width: 450px;
 `;
 const Second = styled.div`
@@ -48,7 +48,7 @@ export default function Home() {
         <First>
           <p
             data-aos="fade-right"
-            data-offset="10"
+            data-offset="1000"
             data-aos-duration="10000"
             data-aos-delay="100"
           >
